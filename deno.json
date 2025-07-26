@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "lib": ["deno.ns", "deno.window", "deno.unstable"],
+      "types": ["npm:@supabase/supabase-js@2.52.1"]
+    },
+    "imports": {
+      "npm:@supabase/supabase-js": "npm:@supabase/supabase-js@2.52.1"
+    },
+    "tasks": {
+      "serve": "deno run --allow-net --allow-env --allow-read supabase/functions/create-sep/index.ts"
+    },
+    "exclude": [
+      "node_modules",
+      "dist",
+      "build"
+    ]
+  }
